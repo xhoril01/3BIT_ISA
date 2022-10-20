@@ -25,6 +25,7 @@ void prog_interrupt(int sig_num)
 {
     cout << "\nInterrupted" << endl;
     IM_FREEEEE;
+    IM_FREEEEE_XML;
     exit(sig_num);
 }
 

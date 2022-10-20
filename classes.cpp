@@ -35,8 +35,8 @@
         }
 
 #define IM_FREEEEE_XML { \
-        if(doc)xmlFreeDoc(doc); \
-        xmlCleanupParser(); \
+            if(doc)xmlFreeDoc(doc); \
+            xmlCleanupParser(); \
         }
 
 // Use(ful|less) macros
@@ -51,6 +51,8 @@ using namespace std;
 BIO *bio;
 SSL_CTX *ctx;
 SSL *ssl;
+
+xmlDocPtr doc;
 
 /**
  * @brief Parsed URL
@@ -154,7 +156,7 @@ class Args
         std::stringstream feedFile;
         std::stringstream certFile;
         std::stringstream certAddr;
-        bool timeFlag = false;;
+        bool timeFlag = false;
         bool authorFlag = false;
         bool assocURLFlag = false;
         bool helpFlag = false;
@@ -516,6 +518,7 @@ class Process
                 BIO_get_ssl(bio, &ssl);
                 SSL_set_mode(ssl, SSL_MODE_AUTO_RETRY);
                 BIO_set_conn_hostname(bio, pURL->authority.str().c_str());
+                SSL_set_tlsext_host_name(ssl, pURL->host.c_str());
             }   
 
             if(BIO_do_connect(bio) <= 0)
@@ -605,16 +608,7 @@ class Process
 
             if(XMLFile.empty())
             { 
-                std::regex reg("[tT]ransfer-[eE]ncoding:\\s.*");
-                if(!regex_search(response.str(),reg))
-                {
-                    ERR_STAT_ARG("Invalid HTTP response on url '%s'", url.c_str());
-                }
-                else
-                {
-                    ERR_STAT_ARG("Response file is transfer-encoded and does NOT contain Content-Length on url '%s'", url.c_str());
-                }
-
+                ERR_STAT_ARG("Invalid HTTP response on url '%s'", url.c_str());
                 IM_FREEEEE;
                 return -1;
             }            
@@ -647,24 +641,11 @@ class Process
             {
                 return body;
             }
-
-            std::smatch matches;
-            reg = "[cC]ontent-[lL]ength:\\s[1-9]{1}[0-9]+";
-
-            if(!regex_search(response, matches, reg))
-            {
-                return body;
-            }
-
-            int pos = matches[0].str().find(":");
-            int base = 10;
-
-            unsigned long long contLength = std::strtoull((matches[0].str().substr(pos+2)).c_str(), nullptr, base);
-            int contPos = response.size()-contLength;
-                    
             
-            body.assign(response.begin()+contPos, response.end());
-
+            int contPosStart = response.find("<");
+            int contPosEnd = response.find_last_of(">");
+            body.assign(response.begin()+contPosStart, response.begin()+contPosEnd+1);
+            
             return body;
         }
 
@@ -680,7 +661,7 @@ class Process
         {
             LIBXML_TEST_VERSION
 
-            xmlDocPtr doc = nullptr;
+            doc = nullptr;
             xmlNodePtr rootNode = nullptr;
 
             if((doc = xmlParseDoc((const xmlChar *)file.c_str())) == nullptr) 
