@@ -25,7 +25,6 @@ void prog_interrupt(int sig_num)
 {
     cout << "\nInterrupted" << endl;
     IM_FREEEEE;
-    IM_FREEEEE_XML;
     exit(sig_num);
 }
 
@@ -45,14 +44,20 @@ int main (int argc, char** argv)
     {
         parsedURL myURL;
         if(!checkURL(args.getURL(), &myURL)) return EXIT_FAILURE;
-        if(process.connect(&myURL, &args, args.getURL()) == -1) return EXIT_FAILURE; 
+        if(process.connect(&myURL, &args, args.getURL()) == -1)
+        {
+            return EXIT_FAILURE; 
+        }
     }
     
     //Extracting feeds from file
     if(!args.getFeedFile().empty())
     {
         process.setPath(args.getFeedFile());
-        if(process.feedfile2List() == -1) return EXIT_FAILURE;
+        if(process.feedfile2List() == -1)
+        {
+            return EXIT_FAILURE; 
+        }
 
         process.loopConnect(&args);
     }

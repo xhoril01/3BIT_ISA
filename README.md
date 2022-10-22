@@ -38,9 +38,9 @@ will remove all executable and .o files
 ## Author
 Denis Horil (xhoril01)
 ## Sources
-* [Atom feed](https://validator.w3.org/feed/docs/atom.html#requiredFeedElements)
-* [RSS 2.0 specification](https://www.rssboard.org/rss-specification#google_vignette)
-* [RDF specification](https://validator.w3.org/feed/docs/rss1.html#s7)
-* [RFC 4287 - atom format](https://www.rfc-editor.org/rfc/rfc4287)
-* [OpenSSL tutorial](https://developer.ibm.com/tutorials/l-openssl/)
-* [Libxml examples](https://github.com/yarox/libxml-examples/tree/master/src/c)
+[Atom feed](https://validator.w3.org/feed/docs/atom.html#requiredFeedElements)
+[RSS 2.0 specification](https://www.rssboard.org/rss-specification#google_vignette)
+[RDF specification](https://validator.w3.org/feed/docs/rss1.html#s7)
+[RFC 4287 - atom format](https://www.rfc-editor.org/rfc/rfc4287)
+[OpenSSL tutorial](https://developer.ibm.com/tutorials/l-openssl/)
+[Libxml examples](https://github.com/yarox/libxml-examples/tree/master/src/c)

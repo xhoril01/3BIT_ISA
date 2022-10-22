@@ -17,6 +17,7 @@
 #include <string>
 #include <regex>
 #include <getopt.h>
+#include <fstream>
 
 #include <openssl/bio.h>
 #include <openssl/ssl.h>
@@ -34,10 +35,6 @@
             if(ctx) SSL_CTX_free(ctx); \
         }
 
-#define IM_FREEEEE_XML { \
-            if(doc)xmlFreeDoc(doc); \
-            xmlCleanupParser(); \
-        }
 
 // Use(ful|less) macros
 #define RDF_FEED 1
@@ -51,8 +48,6 @@ using namespace std;
 BIO *bio;
 SSL_CTX *ctx;
 SSL *ssl;
-
-xmlDocPtr doc;
 
 /**
  * @brief Parsed URL
@@ -420,6 +415,8 @@ class Process
                         feed.URLList.push_back(data);
                     }
                 }
+
+                file.close();
             }
             catch(std::exception &e)
             {
@@ -443,6 +440,7 @@ class Process
                 if(!checkURL(url, &myURL)) continue;
                 if(connect(&myURL, args, url) == -1)
                 {
+                    IM_FREEEEE;
                     continue;
                 }
             }
@@ -661,20 +659,21 @@ class Process
         {
             LIBXML_TEST_VERSION
 
-            doc = nullptr;
+            xmlDocPtr doc = nullptr;
             xmlNodePtr rootNode = nullptr;
 
             if((doc = xmlParseDoc((const xmlChar *)file.c_str())) == nullptr) 
             {
                 ERR_STAT_ARG("Parsing given XML file on url '%s' failed", url.c_str());
-                IM_FREEEEE_XML;
+                xmlCleanupParser();
                 return -1;
             }
 
             if((rootNode = xmlDocGetRootElement(doc)) == nullptr)
             {
                 ERR_STAT_ARG("Given XML file on url '%s' failed", url.c_str());
-                IM_FREEEEE_XML;
+                xmlFreeDoc(doc);
+                xmlCleanupParser();
                 return -1;
             }
 
@@ -701,19 +700,22 @@ class Process
             if(content2print.empty())
             {
                 ERR_STAT_ARG("Unknown feed type on url '%s'", url.c_str());
-                IM_FREEEEE_XML;
+                xmlFreeDoc(doc);
+                xmlCleanupParser();
                 return -1;
             }
 
             if(feedTitle.empty())
             {
                 ERR_STAT_ARG("Missing title of the feed on url '%s'", url.c_str());
-                IM_FREEEEE_XML;
+                xmlFreeDoc(doc);
+                xmlCleanupParser();
                 return -1;
             }
 
             printInfo(content2print, feedTitle, args);
-            IM_FREEEEE_XML;
+            xmlFreeDoc(doc);
+            xmlCleanupParser();
             return 0;
         }
 
@@ -746,6 +748,7 @@ class Process
             XMLContent write;
             Author author;
             std::vector<XMLContent> writeList;
+            xmlChar *content;
             
             for(xmlNodePtr curNode = rootNode->xmlChildrenNode; curNode; curNode = curNode->next)
             {
@@ -755,7 +758,9 @@ class Process
                     {
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"title"))
                         {
-                            *title = (char*)xmlNodeGetContent(childNode);
+                            content = xmlNodeGetContent(childNode);
+                            *title = (char*)content;
+                            xmlFree(content);       
                             break;
                         }
                     }
@@ -767,23 +772,31 @@ class Process
                     {
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"title"))
                         {
-                            write.title = (char*)xmlNodeGetContent(childNode);
+                            content = xmlNodeGetContent(childNode);
+                            write.title = (char*)content;
+                            xmlFree(content);
                         }
 
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"link"))
                         {
-                            write.aURL.push_back((char*)xmlNodeGetContent(childNode));
+                            content = xmlNodeGetContent(childNode);
+                            write.aURL.push_back((char*)content);
+                            xmlFree(content);
                         }
 
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"creator"))
                         {
-                            author.name = (char*)xmlNodeGetContent(childNode);
+                            content = xmlNodeGetContent(childNode);
+                            author.name = (char*)content;
                             write.authors.push_back(author);
+                            xmlFree(content);
                         }
 
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"date"))
                         {
-                            write.time = (char*)xmlNodeGetContent(childNode);
+                            content = xmlNodeGetContent(childNode);
+                            write.time = (char*)content;
+                            xmlFree(content);
                         }
                     }
 
@@ -795,6 +808,7 @@ class Process
                 }
             }
 
+            xmlCleanupParser();
             return writeList;
         }
 
@@ -810,6 +824,7 @@ class Process
             XMLContent write;
             Author author;
             std::vector<XMLContent> writeList;
+            xmlChar *content;
             
             for(xmlNodePtr curNode = rootNode->xmlChildrenNode; curNode; curNode = curNode->next)
             {   
@@ -819,7 +834,9 @@ class Process
                     {
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"title"))
                         {
-                            *title = (char*)xmlNodeGetContent(childNode);
+                            content = xmlNodeGetContent(childNode);
+                            *title = (char*)content;
+                            xmlFree(content);
                         }
 
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"item"))
@@ -828,23 +845,32 @@ class Process
                             {
                                 if(!xmlStrcmp(itemNode->name, (const xmlChar*)"title"))
                                 {
-                                    write.title = (char*)xmlNodeGetContent(itemNode);
+                                    content = xmlNodeGetContent(itemNode); 
+                                    write.title = (char*)content;
+                                    xmlFree(content);
                                 }
 
                                 if(!xmlStrcmp(itemNode->name, (const xmlChar*)"link"))
                                 {
-                                    write.aURL.push_back((char*)xmlNodeGetContent(itemNode));
+                                    content = xmlNodeGetContent(itemNode); 
+                                    write.aURL.push_back((char*)content);
+                                    xmlFree(content);              
                                 }
 
                                 if(!xmlStrcmp(itemNode->name, (const xmlChar*)"author"))
                                 {
-                                    author.name = (char*)xmlNodeGetContent(itemNode);
+                                    content = xmlNodeGetContent(itemNode);
+                                    author.name = (char*)content;
                                     write.authors.push_back(author);
+                                    xmlFree(content);
+               
                                 }
 
                                 if(!xmlStrcmp(itemNode->name, (const xmlChar*)"pubDate"))
                                 {
-                                    write.time = (char*)xmlNodeGetContent(itemNode);
+                                    content = xmlNodeGetContent(itemNode);
+                                    write.time = (char*)content;
+                                    xmlFree(content);
                                 }
                             }
 
@@ -858,6 +884,7 @@ class Process
                 }
             }
 
+            xmlCleanupParser();
             return writeList;
         }
 
@@ -873,12 +900,15 @@ class Process
             XMLContent write;
             Author author;
             std::vector<XMLContent> writeList;
+            xmlChar *content;
 
             for(xmlNodePtr curNode = rootNode->xmlChildrenNode; curNode; curNode = curNode->next)
             {
                 if(!xmlStrcmp(curNode->name, (const xmlChar*)"title"))
                 {
-                    *title = (char*)xmlNodeGetContent(curNode);
+                    content = xmlNodeGetContent(curNode);
+                    *title = (char*)content;
+                    xmlFree(content);
                 }
 
                 if(!xmlStrcmp(curNode->name, (const xmlChar*)"entry"))
@@ -887,12 +917,16 @@ class Process
                     {
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"title"))
                         {
-                            write.title = (char*)xmlNodeGetContent(childNode);
+                            content = xmlNodeGetContent(childNode);
+                            write.title = (char*)content;
+                            xmlFree(content);
                         }
 
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"updated"))
                         {
-                            write.time = (char*)xmlNodeGetContent(childNode);
+                            content = xmlNodeGetContent(childNode);
+                            write.time = (char*)content;
+                            xmlFree(content);
                         }
 
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"author"))
@@ -901,12 +935,16 @@ class Process
                             {
                                 if(!xmlStrcmp(authorNode->name, (const xmlChar*)"name"))
                                 {
-                                    author.name = (char*)xmlNodeGetContent(authorNode);
+                                    content = xmlNodeGetContent(authorNode);
+                                    author.name = (char*)content;
+                                    xmlFree(content);
                                 }
 
                                 if(!xmlStrcmp(authorNode->name, (const xmlChar*)"email"))
                                 {
-                                    author.email = (char*)xmlNodeGetContent(authorNode);
+                                    content = xmlNodeGetContent(authorNode);
+                                    author.email = (char*)content;
+                                    xmlFree(content);
                                 }
                             }
 
@@ -915,7 +953,9 @@ class Process
 
                         if(!xmlStrcmp(childNode->name, (const xmlChar*)"link"))
                         {
-                            write.aURL.push_back((char*)xmlGetProp(childNode,(const xmlChar*)"href"));
+                            content = xmlGetProp(childNode,(const xmlChar*)"href");
+                            write.aURL.push_back((char*)content);
+                            xmlFree(content);
                         }
                     }
 
@@ -927,6 +967,7 @@ class Process
                 }
             }
 
+            xmlCleanupParser();
             return writeList;
         }
         

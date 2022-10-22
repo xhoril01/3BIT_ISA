@@ -15,5 +15,11 @@ all: clean feedreader
 clean:
 	rm -f feedreader *.o
 
-feedreader:
-	$(CXX) $(CFLAGS) -o feedreader feedreader.cpp $(LIBS)
+feedreader: classes.o
+	$(CXX) $(CFLAGS) -o feedreader ./src/feedreader.cpp $(LIBS)
+
+classes.o:
+	$(CXX) $(CFLAGS) -c ./src/classes.cpp
+
+test_help:
+	
