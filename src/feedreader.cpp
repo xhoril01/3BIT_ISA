@@ -35,18 +35,18 @@ int main (int argc, char** argv)
     //Processing arguments
     Args args;
     Process process;
-    if(args.argsProcesser(argc,argv) == -1) return EXIT_FAILURE;
-    if(args.isHelp()) return EXIT_SUCCESS;
-    if(args.reqArgsCheck() == -1) return EXIT_FAILURE;
+    if(args.argsProcesser(argc,argv) == -1) exit(EXIT_FAILURE);
+    if(args.isHelp()) exit(EXIT_SUCCESS);
+    if(args.reqArgsCheck() == -1) exit(EXIT_FAILURE);
 
     //URL check
     if(!args.getURL().empty())
     {
         parsedURL myURL;
-        if(!checkURL(args.getURL(), &myURL)) return EXIT_FAILURE;
+        if(!checkURL(args.getURL(), &myURL)) exit(EXIT_FAILURE);
         if(process.connect(&myURL, &args, args.getURL()) == -1)
         {
-            return EXIT_FAILURE; 
+            exit(EXIT_FAILURE); 
         }
     }
     
@@ -56,12 +56,12 @@ int main (int argc, char** argv)
         process.setPath(args.getFeedFile());
         if(process.feedfile2List() == -1)
         {
-            return EXIT_FAILURE; 
+            exit(EXIT_FAILURE); 
         }
 
         process.loopConnect(&args);
     }
     
-    return EXIT_SUCCESS;
+    exit(EXIT_SUCCESS);
 }
 

@@ -26,8 +26,12 @@
 #include <libxml/parser.h>
 
 // Errors handling
-#define ERR_STAT(_m) fprintf(stderr,(_m "\n"))
-#define ERR_STAT_ARG(_m, ...) fprintf(stderr,(_m "\n\n"), ##__VA_ARGS__)
+#define ERR_STAT(_m) { \
+            fprintf(stderr,(_m "\n")); \
+        }
+#define ERR_STAT_ARG(_m, ...) { \
+            fprintf(stderr,(_m "\n"), ##__VA_ARGS__); \
+        } 
 
 // Destructors
 #define IM_FREEEEE { \
@@ -231,8 +235,7 @@ class Args
                             
                     default: 
                             ERR_STAT("Argument processing failed.");
-                            return -1;
-                            
+                            return -1;           
                 }
             }
 
@@ -240,6 +243,14 @@ class Args
             if(optind < argc && (argc-optind) <= 1)
             {
                 url << argv[optind];
+            }
+            else if((argc-optind) > 1)
+            {
+                if(!helpFlag)
+                {
+                    ERR_STAT("None or unknown parameter was given");
+                    return -1;
+                }
             }
 
             return 0;
@@ -343,7 +354,7 @@ class Args
             }
             else if (!url.str().empty() && !feedFile.str().empty())
             {
-                ERR_STAT("One of 'url' or '-f <feedfile>' argument is required, but not BOTH.");
+                ERR_STAT("One of 'url' or '-f <feedfile>' argument is required, but NOT both.");
                 return -1;
             }
             else return 0;
@@ -439,8 +450,7 @@ class Process
                 parsedURL myURL;
                 if(!checkURL(url, &myURL)) continue;
                 if(connect(&myURL, args, url) == -1)
-                {
-                    IM_FREEEEE;
+                {                 
                     continue;
                 }
             }
@@ -671,7 +681,7 @@ class Process
 
             if((rootNode = xmlDocGetRootElement(doc)) == nullptr)
             {
-                ERR_STAT_ARG("Given XML file on url '%s' failed", url.c_str());
+                ERR_STAT_ARG("Missing root element in XML file on url '%s'", url.c_str());
                 xmlFreeDoc(doc);
                 xmlCleanupParser();
                 return -1;
