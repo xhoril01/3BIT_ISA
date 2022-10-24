@@ -35,6 +35,17 @@ make clean
 ```
 will remove all executable and .o files
 
+### Testing
+Command
+```
+make test
+```
+will start test script `test.sh` which will test script `feedreader`.
+For more details use command
+```
+make test_help
+```
+
 ## Author
 Denis Horil (xhoril01)
 ## Sources
