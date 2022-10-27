@@ -1,0 +1,2588 @@
+TEST_1: Help statement
+
+=================================================== HELP ==================================================
+|                                                                                                          |
+|   USAGE: feedreader <URL | -f <feedfile>> [-c <certfile>] [-C <certaddr>] [-T] [-u] [-a] [-h | --help]   |
+|                 URL - resource URL                                                                       |
+|       -f <feedfile> - path to feedfile                                                                   |
+|       -c <certfile> - path to file with certificates                                                     |
+|       -C <certaddr> - path to directory with certficates                                                 |
+|                  -T - display last edit time or creation time (if available)                             |
+|                  -u - display associated URLs (if available)                                             |
+|                  -a - display information about author (if available)                                    |
+|                                                                                                          |
+|  * One of arguments <URL> or <-f <feedfile>> must be defined, but NOT both.                              |
+|  * If <-c <certfile>> or <-C <certaddr>> are not defined, 'SSL_CTX_set_default_verify_paths()' function  |
+|    will be used.                                                                                         |
+|  * While HTTP communication with server, redirecting is NOT implemented                                  |
+|  * In URL can be optionally specificated 'port number'                                                   |
+|                                                                                                          |
+============================================================================================================
+
+=====================================
+
+TEST_2: Help statement with other flags
+
+=================================================== HELP ==================================================
+|                                                                                                          |
+|   USAGE: feedreader <URL | -f <feedfile>> [-c <certfile>] [-C <certaddr>] [-T] [-u] [-a] [-h | --help]   |
+|                 URL - resource URL                                                                       |
+|       -f <feedfile> - path to feedfile                                                                   |
+|       -c <certfile> - path to file with certificates                                                     |
+|       -C <certaddr> - path to directory with certficates                                                 |
+|                  -T - display last edit time or creation time (if available)                             |
+|                  -u - display associated URLs (if available)                                             |
+|                  -a - display information about author (if available)                                    |
+|                                                                                                          |
+|  * One of arguments <URL> or <-f <feedfile>> must be defined, but NOT both.                              |
+|  * If <-c <certfile>> or <-C <certaddr>> are not defined, 'SSL_CTX_set_default_verify_paths()' function  |
+|    will be used.                                                                                         |
+|  * While HTTP communication with server, redirecting is NOT implemented                                  |
+|  * In URL can be optionally specificated 'port number'                                                   |
+|                                                                                                          |
+============================================================================================================
+
+=====================================
+
+TEST_3: No flags
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+
+UK.gov finds billions in cash for big data contracts
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+
+Flexible document model is secret noSQL sauce
+
+Meta met a programming language it likes better than Java
+
+Apple finds way to squeeze social network apps until pips squeak
+
+Python team wraps version 3.11.0
+
+SAP struggles to exit Russia after sale of support unit stalled
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+
+Microsoft's Chinese website reveals free PC Manager utility
+
+Human-replacing AI startups reach $1bn unicorn status
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+
+Microsoft said to be in talks to invest more in OpenAI
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+
+Windows Subsystem for Android declared ready for prime time
+
+India fines Google $162 million for abusing Android monopoly
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+
+AI programming assistants mean rethinking computer science education
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+
+FreeBSD comes to Amazon's lightweight hypervisor
+
+Where do you fit in the professional services world? Find out with this webinar
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+
+YouTube loves recommending conservative vids regardless of your beliefs
+
+Self-driving tech startup values crash 81% in 2 years
+
+FOSS digital audio workstation Ardour reaches version 7
+
+Firefox 106 will let you type directly into browser PDFs
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+
+Google reveals another experimental operating system: KataOS
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+
+Just $10 to create an AI chatbot of a dead loved one
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+
+Laugh all you want. There will be a year of the Linux desktop
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+
+Boffins build blood-swimming medical microbot
+
+Dell mothership hovers over backup startup, beams it aboard
+
+Dell Latitude E6220 12.5in Core i7 notebook
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+
+WordPress Uses RSS as Blog Export Format
+
+Yahoo Groups Dropped RSS Feed Support
+
+What Do You Use to Read RSS Feeds?
+
+RSS Board Moves to New Server
+
+Media RSS Moves to the RSS Advisory Board
+
+Proposal: Take Over Publication of Media-RSS
+
+6 Edits Made to RSS Specification
+
+The RSS Namespace? 
+
+Ryan Parman Joins RSS Advisory Board
+
+RSS in 2008
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+
+Microsoft Updates RSS User Agent
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+
+Syndication discussions hot up
+
+Personal web server integrates file sharing and messaging
+
+Syndication and Metadata
+
+UK bloggers get organised
+
+Yournamehere.com more important than anything
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+
+<No Title>
+
+The Engine That Does More
+
+Astronauts' Dirty Laundry
+
+=====================================
+
+TEST_4: -T flag
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+Updated: 2022-10-26T17:30:11Z
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+Updated: 2022-10-26T16:00:14Z
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+Updated: 2022-10-26T12:30:12Z
+
+UK.gov finds billions in cash for big data contracts
+Updated: 2022-10-26T08:30:06Z
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+Updated: 2022-10-26T07:32:06Z
+
+Flexible document model is secret noSQL sauce
+Updated: 2022-10-26T05:00:15Z
+
+Meta met a programming language it likes better than Java
+Updated: 2022-10-25T22:55:07Z
+
+Apple finds way to squeeze social network apps until pips squeak
+Updated: 2022-10-25T22:14:14Z
+
+Python team wraps version 3.11.0
+Updated: 2022-10-25T18:30:10Z
+
+SAP struggles to exit Russia after sale of support unit stalled
+Updated: 2022-10-25T16:30:09Z
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+Updated: 2022-10-25T15:30:06Z
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+Updated: 2022-10-25T14:30:10Z
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+Updated: 2022-10-25T09:37:21Z
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+Updated: 2022-10-25T06:29:12Z
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+Updated: 2022-10-25T01:43:54Z
+
+Microsoft's Chinese website reveals free PC Manager utility
+Updated: 2022-10-24T05:31:12Z
+
+Human-replacing AI startups reach $1bn unicorn status
+Updated: 2022-10-23T21:14:07Z
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+Updated: 2022-10-22T07:45:10Z
+
+Microsoft said to be in talks to invest more in OpenAI
+Updated: 2022-10-21T19:13:27Z
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+Updated: 2022-10-21T16:30:08Z
+
+Windows Subsystem for Android declared ready for prime time
+Updated: 2022-10-21T04:59:12Z
+
+India fines Google $162 million for abusing Android monopoly
+Updated: 2022-10-21T01:58:07Z
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+Updated: 2022-10-20T12:51:10Z
+
+AI programming assistants mean rethinking computer science education
+Updated: 2022-10-20T07:31:04Z
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+Updated: 2022-10-20T02:28:13Z
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+Updated: 2022-10-19T19:45:12Z
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+Updated: 2022-10-19T19:00:11Z
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+Updated: 2022-10-19T11:28:05Z
+
+FreeBSD comes to Amazon's lightweight hypervisor
+Updated: 2022-10-19T10:32:11Z
+
+Where do you fit in the professional services world? Find out with this webinar
+Updated: 2022-10-19T09:00:11Z
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+Updated: 2022-10-19T06:27:08Z
+
+YouTube loves recommending conservative vids regardless of your beliefs
+Updated: 2022-10-18T23:16:55Z
+
+Self-driving tech startup values crash 81% in 2 years
+Updated: 2022-10-18T17:15:14Z
+
+FOSS digital audio workstation Ardour reaches version 7
+Updated: 2022-10-18T16:00:09Z
+
+Firefox 106 will let you type directly into browser PDFs
+Updated: 2022-10-18T15:30:13Z
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+Updated: 2022-10-18T04:59:07Z
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+Updated: 2022-10-18T02:45:40Z
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+Updated: 2022-10-17T21:00:09Z
+
+Google reveals another experimental operating system: KataOS
+Updated: 2022-10-17T15:30:12Z
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+Updated: 2022-10-17T11:56:31Z
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+Updated: 2022-10-17T06:58:07Z
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+Updated: 2022-10-17T05:58:14Z
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+Updated: 2022-10-17T04:59:08Z
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+Updated: 2022-10-16T10:39:12Z
+
+Just $10 to create an AI chatbot of a dead loved one
+Updated: 2022-10-15T08:56:06Z
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+Updated: 2022-10-14T23:16:11Z
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+Updated: 2022-10-14T18:00:13Z
+
+Laugh all you want. There will be a year of the Linux desktop
+Updated: 2022-10-14T11:03:09Z
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+Updated: 2022-10-14T09:25:12Z
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+Updated: 2022-10-14T04:03:05Z
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+Updated: 2012-03-12T17:22:08Z
+
+Boffins build blood-swimming medical microbot
+Updated: 2012-02-25T01:53:29Z
+
+Dell mothership hovers over backup startup, beams it aboard
+Updated: 2012-02-24T19:01:27Z
+
+Dell Latitude E6220 12.5in Core i7 notebook
+Updated: 2012-02-21T12:33:26Z
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+Updated: Wed, 02 Apr 2014 11:12:53 -0400
+
+WordPress Uses RSS as Blog Export Format
+Updated: Tue, 11 Mar 2014 16:18:14 -0400
+
+Yahoo Groups Dropped RSS Feed Support
+Updated: Thu, 06 Mar 2014 15:47:26 -0500
+
+What Do You Use to Read RSS Feeds?
+Updated: Tue, 25 Feb 2014 15:15:05 -0500
+
+RSS Board Moves to New Server
+Updated: Thu, 28 Oct 2010 17:49:05 -0400
+
+Media RSS Moves to the RSS Advisory Board
+Updated: Fri, 11 Dec 2009 21:29:08 -0500
+
+Proposal: Take Over Publication of Media-RSS
+Updated: Tue, 24 Nov 2009 13:58:43 -0500
+
+6 Edits Made to RSS Specification
+Updated: Mon, 30 Mar 2009 08:00:00 -0400
+
+The RSS Namespace? 
+Updated: Fri, 13 Feb 2009 00:46:36 -0500
+
+Ryan Parman Joins RSS Advisory Board
+Updated: Fri, 12 Dec 2008 11:20:35 -0500
+
+RSS in 2008
+Updated: Thu, 23 Oct 2008 23:06:48 -0400
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+Updated: Tue, 12 Aug 2008 12:42:49 -0400
+
+Microsoft Updates RSS User Agent
+Updated: Thu, 28 Feb 2008 10:12:51 -0500
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+Updated: Tue, 22 Jan 2008 19:14:15 -0500
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+Updated: Wed, 16 Jan 2008 17:39:26 -0500
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+
+Syndication discussions hot up
+
+Personal web server integrates file sharing and messaging
+
+Syndication and Metadata
+
+UK bloggers get organised
+
+Yournamehere.com more important than anything
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+Updated: Tue, 03 Jun 2003 09:39:21 GMT
+
+<No Title>
+Updated: Fri, 30 May 2003 11:06:42 GMT
+
+The Engine That Does More
+Updated: Tue, 27 May 2003 08:37:32 GMT
+
+Astronauts' Dirty Laundry
+Updated: Tue, 20 May 2003 08:56:02 GMT
+
+=====================================
+
+TEST_5: -u flag
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/tightening_linux_boot_process_microsoft_poettering/
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/rolling_rhino_reboot/
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/shutterstock_getty_openai_dall_e/
+
+UK.gov finds billions in cash for big data contracts
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/uk_big_data_deals/
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/generative_ai_pcs_upgrades/
+
+Flexible document model is secret noSQL sauce
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/flexible_document_model_is_secret/
+
+Meta met a programming language it likes better than Java
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/meta_java_kotlin/
+
+Apple finds way to squeeze social network apps until pips squeak
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/apple_social_media_apps_nfts/
+
+Python team wraps version 3.11.0
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/python_team_wraps_version_3110/
+
+SAP struggles to exit Russia after sale of support unit stalled
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/sap_struggles_to_exit_russia/
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/linux_kernel_51917_ubuntu/
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/chrome_support_windows_7/
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/lashcat9_linux_ui/
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/microsoft_windows_22h2_printer/
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/realpage_rent_lawsuit/
+
+Microsoft's Chinese website reveals free PC Manager utility
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/24/microsoft_china_pc_manager_utility/
+
+Human-replacing AI startups reach $1bn unicorn status
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/23/two_generative_ai_startups_javis/
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/22/chrome_extension_howto/
+
+Microsoft said to be in talks to invest more in OpenAI
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/microsoft_openai_investment/
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/openbsd_72_released/
+
+Windows Subsystem for Android declared ready for prime time
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/windows_subsystem_for_android_released/
+
+India fines Google $162 million for abusing Android monopoly
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/india_fines_google_android_monopoly/
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ubuntu_2210_kinetic_kudu/
+
+AI programming assistants mean rethinking computer science education
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ai_programming_tools_mean_rethinking/
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/doj_solarwinds_dynatrace_interlocking_directors/
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/microsoft_updates_windows_10/
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/google_go_container_cncf/
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/github_copilot_copyright/
+
+FreeBSD comes to Amazon's lightweight hypervisor
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/freebsd_comes_to_amazons_lightweight/
+
+Where do you fit in the professional services world? Find out with this webinar
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/where_do_you_fit_in/
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/ai_model_reveals_new_policy/
+
+YouTube loves recommending conservative vids regardless of your beliefs
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/youtube_algorithm_conservative_content/
+
+Self-driving tech startup values crash 81% in 2 years
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/selfdriving_tech_values/
+
+FOSS digital audio workstation Ardour reaches version 7
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/foss_digital_audio_workstation_ardour/
+
+Firefox 106 will let you type directly into browser PDFs
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/firefox_106_arrives/
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/vdi_meets_daas/
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/doe_cerebras_waferscale/
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/broadcom_vmware_cloud_eu/
+
+Google reveals another experimental operating system: KataOS
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/google_kata_os/
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/vodafone_opts_to_move_sap/
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/linux_6_1_rc1/
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/who_me/
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/azure_hybrid_benefit_extension/
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/16/in-brief-ai/
+
+Just $10 to create an AI chatbot of a dead loved one
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/15/would_you_pay_10_to/
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dept_of_veterans_affairs_oracle_cerner/
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/kernel_61_will_contain_fixes/
+
+Laugh all you want. There will be a year of the Linux desktop
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/year_of_linux_desktop/
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dsag_sap_user_conference/
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/trustable_internet_endorsement_layer/
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/03/12/idc_cases_big_data/
+
+Boffins build blood-swimming medical microbot
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/25/autonomous_implantable_robot/
+
+Dell mothership hovers over backup startup, beams it aboard
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/24/dell_appassure/
+
+Dell Latitude E6220 12.5in Core i7 notebook
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/21/review_dell_latitude_e6220_core_i7_notebook/
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+URL: https://www.rssboard.org/news/208/should-feed-readers-count-unread-items
+
+WordPress Uses RSS as Blog Export Format
+URL: https://www.rssboard.org/news/207/wordpress-uses-rss-blog-export-format
+
+Yahoo Groups Dropped RSS Feed Support
+URL: https://www.rssboard.org/news/206/yahoo-groups-dropped-rss-feed-support
+
+What Do You Use to Read RSS Feeds?
+URL: https://www.rssboard.org/news/205/do-you-use-read-rss-feeds
+
+RSS Board Moves to New Server
+URL: https://www.rssboard.org/news/204/rss-board-moves-new-server
+
+Media RSS Moves to the RSS Advisory Board
+URL: https://www.rssboard.org/news/203/media-rss-moves-rss-advisory-board
+
+Proposal: Take Over Publication of Media-RSS
+URL: https://www.rssboard.org/news/202/proposal-take-over-publication-media-rss
+
+6 Edits Made to RSS Specification
+URL: https://www.rssboard.org/news/190/6-edits-made-rss-specification
+
+The RSS Namespace? 
+URL: https://www.rssboard.org/news/187/rss-namespace
+
+Ryan Parman Joins RSS Advisory Board
+URL: https://www.rssboard.org/news/185/ryan-parman-joins-rss-advisory-board
+
+RSS in 2008
+URL: https://www.rssboard.org/news/184/rss-2008
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+URL: https://www.rssboard.org/news/183/randy-charles-morin-becomes-rss-advisory
+
+Microsoft Updates RSS User Agent
+URL: https://www.rssboard.org/news/182/microsoft-updates-rss-user-agent
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+URL: https://www.rssboard.org/news/181/rss-090-091-moving-rss-advisory-board
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+URL: https://www.rssboard.org/news/180/sterling-camden-simone-carletti-join-rss
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+URL: http://writetheweb.com/read.php?item=24
+
+Syndication discussions hot up
+URL: http://writetheweb.com/read.php?item=23
+
+Personal web server integrates file sharing and messaging
+URL: http://writetheweb.com/read.php?item=22
+
+Syndication and Metadata
+URL: http://writetheweb.com/read.php?item=21
+
+UK bloggers get organised
+URL: http://writetheweb.com/read.php?item=20
+
+Yournamehere.com more important than anything
+URL: http://writetheweb.com/read.php?item=19
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp
+
+<No Title>
+
+The Engine That Does More
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-VASIMR.asp
+
+Astronauts' Dirty Laundry
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-laundry.asp
+
+=====================================
+
+TEST_6: -a flag
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+Author: Liam Proven
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+Author: Liam Proven
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+Author: Katyanna Quach
+
+UK.gov finds billions in cash for big data contracts
+Author: Lindsay Clark
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+Author: Mark Pesce
+
+Flexible document model is secret noSQL sauce
+Author: Robin Birtstone
+
+Meta met a programming language it likes better than Java
+Author: Thomas Claburn
+
+Apple finds way to squeeze social network apps until pips squeak
+Author: Brandon Vigliarolo
+
+Python team wraps version 3.11.0
+Author: Thomas Claburn
+
+SAP struggles to exit Russia after sale of support unit stalled
+Author: Lindsay Clark
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+Author: Liam Proven
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+Author: Brandon Vigliarolo
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+Author: Liam Proven
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+Author: Jeff Burt
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+Author: Katyanna Quach
+
+Microsoft's Chinese website reveals free PC Manager utility
+Author: Simon Sharwood
+
+Human-replacing AI startups reach $1bn unicorn status
+Author: Katyanna Quach
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+Author: Thomas Claburn
+
+Microsoft said to be in talks to invest more in OpenAI
+Author: Jeff Burt
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+Author: Liam Proven
+
+Windows Subsystem for Android declared ready for prime time
+Author: Simon Sharwood
+
+India fines Google $162 million for abusing Android monopoly
+Author: Simon Sharwood
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+Author: Liam Proven
+
+AI programming assistants mean rethinking computer science education
+Author: Thomas Claburn
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+Author: Simon Sharwood
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+Author: Jeff Burt
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+Author: Liam Proven
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+Author: Thomas Claburn
+
+FreeBSD comes to Amazon's lightweight hypervisor
+Author: Liam Proven
+
+Where do you fit in the professional services world? Find out with this webinar
+Author: David Gordon
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+Author: Katyanna Quach
+
+YouTube loves recommending conservative vids regardless of your beliefs
+Author: Katyanna Quach
+
+Self-driving tech startup values crash 81% in 2 years
+Author: Brandon Vigliarolo
+
+FOSS digital audio workstation Ardour reaches version 7
+Author: Liam Proven
+
+Firefox 106 will let you type directly into browser PDFs
+Author: Liam Proven
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+Author: Simon Sharwood
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+Author: Tobias Mann
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+Author: Tobias Mann
+
+Google reveals another experimental operating system: KataOS
+Author: Liam Proven
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+Author: Lindsay Clark
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+Author: Simon Sharwood
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+Author: Matthew JC Powell
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+Author: Simon Sharwood
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+Author: Katyanna Quach
+
+Just $10 to create an AI chatbot of a dead loved one
+Author: Katyanna Quach
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+Author: Thomas Claburn
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+Author: Liam Proven
+
+Laugh all you want. There will be a year of the Linux desktop
+Author: Steven J. Vaughan-Nichols
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+Author: Lindsay Clark
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+Author: Simon Sharwood
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+Author: Timothy Prickett Morgan
+
+Boffins build blood-swimming medical microbot
+Author: Rik Myslewski
+
+Dell mothership hovers over backup startup, beams it aboard
+Author: Chris Mellor
+
+Dell Latitude E6220 12.5in Core i7 notebook
+Author: Lynley Oram
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+
+WordPress Uses RSS as Blog Export Format
+
+Yahoo Groups Dropped RSS Feed Support
+
+What Do You Use to Read RSS Feeds?
+
+RSS Board Moves to New Server
+
+Media RSS Moves to the RSS Advisory Board
+
+Proposal: Take Over Publication of Media-RSS
+
+6 Edits Made to RSS Specification
+
+The RSS Namespace? 
+
+Ryan Parman Joins RSS Advisory Board
+
+RSS in 2008
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+
+Microsoft Updates RSS User Agent
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+
+Syndication discussions hot up
+
+Personal web server integrates file sharing and messaging
+
+Syndication and Metadata
+
+UK bloggers get organised
+
+Yournamehere.com more important than anything
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+
+<No Title>
+
+The Engine That Does More
+
+Astronauts' Dirty Laundry
+
+=====================================
+
+TEST_7: -a -u flag
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/tightening_linux_boot_process_microsoft_poettering/
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/rolling_rhino_reboot/
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/shutterstock_getty_openai_dall_e/
+
+UK.gov finds billions in cash for big data contracts
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/uk_big_data_deals/
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+Author: Mark Pesce
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/generative_ai_pcs_upgrades/
+
+Flexible document model is secret noSQL sauce
+Author: Robin Birtstone
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/flexible_document_model_is_secret/
+
+Meta met a programming language it likes better than Java
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/meta_java_kotlin/
+
+Apple finds way to squeeze social network apps until pips squeak
+Author: Brandon Vigliarolo
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/apple_social_media_apps_nfts/
+
+Python team wraps version 3.11.0
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/python_team_wraps_version_3110/
+
+SAP struggles to exit Russia after sale of support unit stalled
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/sap_struggles_to_exit_russia/
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/linux_kernel_51917_ubuntu/
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+Author: Brandon Vigliarolo
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/chrome_support_windows_7/
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/lashcat9_linux_ui/
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+Author: Jeff Burt
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/microsoft_windows_22h2_printer/
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/realpage_rent_lawsuit/
+
+Microsoft's Chinese website reveals free PC Manager utility
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/24/microsoft_china_pc_manager_utility/
+
+Human-replacing AI startups reach $1bn unicorn status
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/23/two_generative_ai_startups_javis/
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/22/chrome_extension_howto/
+
+Microsoft said to be in talks to invest more in OpenAI
+Author: Jeff Burt
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/microsoft_openai_investment/
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/openbsd_72_released/
+
+Windows Subsystem for Android declared ready for prime time
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/windows_subsystem_for_android_released/
+
+India fines Google $162 million for abusing Android monopoly
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/india_fines_google_android_monopoly/
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ubuntu_2210_kinetic_kudu/
+
+AI programming assistants mean rethinking computer science education
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ai_programming_tools_mean_rethinking/
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/doj_solarwinds_dynatrace_interlocking_directors/
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+Author: Jeff Burt
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/microsoft_updates_windows_10/
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/google_go_container_cncf/
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/github_copilot_copyright/
+
+FreeBSD comes to Amazon's lightweight hypervisor
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/freebsd_comes_to_amazons_lightweight/
+
+Where do you fit in the professional services world? Find out with this webinar
+Author: David Gordon
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/where_do_you_fit_in/
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/ai_model_reveals_new_policy/
+
+YouTube loves recommending conservative vids regardless of your beliefs
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/youtube_algorithm_conservative_content/
+
+Self-driving tech startup values crash 81% in 2 years
+Author: Brandon Vigliarolo
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/selfdriving_tech_values/
+
+FOSS digital audio workstation Ardour reaches version 7
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/foss_digital_audio_workstation_ardour/
+
+Firefox 106 will let you type directly into browser PDFs
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/firefox_106_arrives/
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/vdi_meets_daas/
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+Author: Tobias Mann
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/doe_cerebras_waferscale/
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+Author: Tobias Mann
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/broadcom_vmware_cloud_eu/
+
+Google reveals another experimental operating system: KataOS
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/google_kata_os/
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/vodafone_opts_to_move_sap/
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/linux_6_1_rc1/
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+Author: Matthew JC Powell
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/who_me/
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/azure_hybrid_benefit_extension/
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/16/in-brief-ai/
+
+Just $10 to create an AI chatbot of a dead loved one
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/15/would_you_pay_10_to/
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dept_of_veterans_affairs_oracle_cerner/
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/kernel_61_will_contain_fixes/
+
+Laugh all you want. There will be a year of the Linux desktop
+Author: Steven J. Vaughan-Nichols
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/year_of_linux_desktop/
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dsag_sap_user_conference/
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/trustable_internet_endorsement_layer/
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+Author: Timothy Prickett Morgan
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/03/12/idc_cases_big_data/
+
+Boffins build blood-swimming medical microbot
+Author: Rik Myslewski
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/25/autonomous_implantable_robot/
+
+Dell mothership hovers over backup startup, beams it aboard
+Author: Chris Mellor
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/24/dell_appassure/
+
+Dell Latitude E6220 12.5in Core i7 notebook
+Author: Lynley Oram
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/21/review_dell_latitude_e6220_core_i7_notebook/
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+URL: https://www.rssboard.org/news/208/should-feed-readers-count-unread-items
+
+WordPress Uses RSS as Blog Export Format
+URL: https://www.rssboard.org/news/207/wordpress-uses-rss-blog-export-format
+
+Yahoo Groups Dropped RSS Feed Support
+URL: https://www.rssboard.org/news/206/yahoo-groups-dropped-rss-feed-support
+
+What Do You Use to Read RSS Feeds?
+URL: https://www.rssboard.org/news/205/do-you-use-read-rss-feeds
+
+RSS Board Moves to New Server
+URL: https://www.rssboard.org/news/204/rss-board-moves-new-server
+
+Media RSS Moves to the RSS Advisory Board
+URL: https://www.rssboard.org/news/203/media-rss-moves-rss-advisory-board
+
+Proposal: Take Over Publication of Media-RSS
+URL: https://www.rssboard.org/news/202/proposal-take-over-publication-media-rss
+
+6 Edits Made to RSS Specification
+URL: https://www.rssboard.org/news/190/6-edits-made-rss-specification
+
+The RSS Namespace? 
+URL: https://www.rssboard.org/news/187/rss-namespace
+
+Ryan Parman Joins RSS Advisory Board
+URL: https://www.rssboard.org/news/185/ryan-parman-joins-rss-advisory-board
+
+RSS in 2008
+URL: https://www.rssboard.org/news/184/rss-2008
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+URL: https://www.rssboard.org/news/183/randy-charles-morin-becomes-rss-advisory
+
+Microsoft Updates RSS User Agent
+URL: https://www.rssboard.org/news/182/microsoft-updates-rss-user-agent
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+URL: https://www.rssboard.org/news/181/rss-090-091-moving-rss-advisory-board
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+URL: https://www.rssboard.org/news/180/sterling-camden-simone-carletti-join-rss
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+URL: http://writetheweb.com/read.php?item=24
+
+Syndication discussions hot up
+URL: http://writetheweb.com/read.php?item=23
+
+Personal web server integrates file sharing and messaging
+URL: http://writetheweb.com/read.php?item=22
+
+Syndication and Metadata
+URL: http://writetheweb.com/read.php?item=21
+
+UK bloggers get organised
+URL: http://writetheweb.com/read.php?item=20
+
+Yournamehere.com more important than anything
+URL: http://writetheweb.com/read.php?item=19
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp
+
+<No Title>
+
+The Engine That Does More
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-VASIMR.asp
+
+Astronauts' Dirty Laundry
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-laundry.asp
+
+=====================================
+
+TEST_8: -a -T flag
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+Updated: 2022-10-26T17:30:11Z
+Author: Liam Proven
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+Updated: 2022-10-26T16:00:14Z
+Author: Liam Proven
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+Updated: 2022-10-26T12:30:12Z
+Author: Katyanna Quach
+
+UK.gov finds billions in cash for big data contracts
+Updated: 2022-10-26T08:30:06Z
+Author: Lindsay Clark
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+Updated: 2022-10-26T07:32:06Z
+Author: Mark Pesce
+
+Flexible document model is secret noSQL sauce
+Updated: 2022-10-26T05:00:15Z
+Author: Robin Birtstone
+
+Meta met a programming language it likes better than Java
+Updated: 2022-10-25T22:55:07Z
+Author: Thomas Claburn
+
+Apple finds way to squeeze social network apps until pips squeak
+Updated: 2022-10-25T22:14:14Z
+Author: Brandon Vigliarolo
+
+Python team wraps version 3.11.0
+Updated: 2022-10-25T18:30:10Z
+Author: Thomas Claburn
+
+SAP struggles to exit Russia after sale of support unit stalled
+Updated: 2022-10-25T16:30:09Z
+Author: Lindsay Clark
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+Updated: 2022-10-25T15:30:06Z
+Author: Liam Proven
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+Updated: 2022-10-25T14:30:10Z
+Author: Brandon Vigliarolo
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+Updated: 2022-10-25T09:37:21Z
+Author: Liam Proven
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+Updated: 2022-10-25T06:29:12Z
+Author: Jeff Burt
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+Updated: 2022-10-25T01:43:54Z
+Author: Katyanna Quach
+
+Microsoft's Chinese website reveals free PC Manager utility
+Updated: 2022-10-24T05:31:12Z
+Author: Simon Sharwood
+
+Human-replacing AI startups reach $1bn unicorn status
+Updated: 2022-10-23T21:14:07Z
+Author: Katyanna Quach
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+Updated: 2022-10-22T07:45:10Z
+Author: Thomas Claburn
+
+Microsoft said to be in talks to invest more in OpenAI
+Updated: 2022-10-21T19:13:27Z
+Author: Jeff Burt
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+Updated: 2022-10-21T16:30:08Z
+Author: Liam Proven
+
+Windows Subsystem for Android declared ready for prime time
+Updated: 2022-10-21T04:59:12Z
+Author: Simon Sharwood
+
+India fines Google $162 million for abusing Android monopoly
+Updated: 2022-10-21T01:58:07Z
+Author: Simon Sharwood
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+Updated: 2022-10-20T12:51:10Z
+Author: Liam Proven
+
+AI programming assistants mean rethinking computer science education
+Updated: 2022-10-20T07:31:04Z
+Author: Thomas Claburn
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+Updated: 2022-10-20T02:28:13Z
+Author: Simon Sharwood
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+Updated: 2022-10-19T19:45:12Z
+Author: Jeff Burt
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+Updated: 2022-10-19T19:00:11Z
+Author: Liam Proven
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+Updated: 2022-10-19T11:28:05Z
+Author: Thomas Claburn
+
+FreeBSD comes to Amazon's lightweight hypervisor
+Updated: 2022-10-19T10:32:11Z
+Author: Liam Proven
+
+Where do you fit in the professional services world? Find out with this webinar
+Updated: 2022-10-19T09:00:11Z
+Author: David Gordon
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+Updated: 2022-10-19T06:27:08Z
+Author: Katyanna Quach
+
+YouTube loves recommending conservative vids regardless of your beliefs
+Updated: 2022-10-18T23:16:55Z
+Author: Katyanna Quach
+
+Self-driving tech startup values crash 81% in 2 years
+Updated: 2022-10-18T17:15:14Z
+Author: Brandon Vigliarolo
+
+FOSS digital audio workstation Ardour reaches version 7
+Updated: 2022-10-18T16:00:09Z
+Author: Liam Proven
+
+Firefox 106 will let you type directly into browser PDFs
+Updated: 2022-10-18T15:30:13Z
+Author: Liam Proven
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+Updated: 2022-10-18T04:59:07Z
+Author: Simon Sharwood
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+Updated: 2022-10-18T02:45:40Z
+Author: Tobias Mann
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+Updated: 2022-10-17T21:00:09Z
+Author: Tobias Mann
+
+Google reveals another experimental operating system: KataOS
+Updated: 2022-10-17T15:30:12Z
+Author: Liam Proven
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+Updated: 2022-10-17T11:56:31Z
+Author: Lindsay Clark
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+Updated: 2022-10-17T06:58:07Z
+Author: Simon Sharwood
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+Updated: 2022-10-17T05:58:14Z
+Author: Matthew JC Powell
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+Updated: 2022-10-17T04:59:08Z
+Author: Simon Sharwood
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+Updated: 2022-10-16T10:39:12Z
+Author: Katyanna Quach
+
+Just $10 to create an AI chatbot of a dead loved one
+Updated: 2022-10-15T08:56:06Z
+Author: Katyanna Quach
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+Updated: 2022-10-14T23:16:11Z
+Author: Thomas Claburn
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+Updated: 2022-10-14T18:00:13Z
+Author: Liam Proven
+
+Laugh all you want. There will be a year of the Linux desktop
+Updated: 2022-10-14T11:03:09Z
+Author: Steven J. Vaughan-Nichols
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+Updated: 2022-10-14T09:25:12Z
+Author: Lindsay Clark
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+Updated: 2022-10-14T04:03:05Z
+Author: Simon Sharwood
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+Updated: 2012-03-12T17:22:08Z
+Author: Timothy Prickett Morgan
+
+Boffins build blood-swimming medical microbot
+Updated: 2012-02-25T01:53:29Z
+Author: Rik Myslewski
+
+Dell mothership hovers over backup startup, beams it aboard
+Updated: 2012-02-24T19:01:27Z
+Author: Chris Mellor
+
+Dell Latitude E6220 12.5in Core i7 notebook
+Updated: 2012-02-21T12:33:26Z
+Author: Lynley Oram
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+Updated: Wed, 02 Apr 2014 11:12:53 -0400
+
+WordPress Uses RSS as Blog Export Format
+Updated: Tue, 11 Mar 2014 16:18:14 -0400
+
+Yahoo Groups Dropped RSS Feed Support
+Updated: Thu, 06 Mar 2014 15:47:26 -0500
+
+What Do You Use to Read RSS Feeds?
+Updated: Tue, 25 Feb 2014 15:15:05 -0500
+
+RSS Board Moves to New Server
+Updated: Thu, 28 Oct 2010 17:49:05 -0400
+
+Media RSS Moves to the RSS Advisory Board
+Updated: Fri, 11 Dec 2009 21:29:08 -0500
+
+Proposal: Take Over Publication of Media-RSS
+Updated: Tue, 24 Nov 2009 13:58:43 -0500
+
+6 Edits Made to RSS Specification
+Updated: Mon, 30 Mar 2009 08:00:00 -0400
+
+The RSS Namespace? 
+Updated: Fri, 13 Feb 2009 00:46:36 -0500
+
+Ryan Parman Joins RSS Advisory Board
+Updated: Fri, 12 Dec 2008 11:20:35 -0500
+
+RSS in 2008
+Updated: Thu, 23 Oct 2008 23:06:48 -0400
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+Updated: Tue, 12 Aug 2008 12:42:49 -0400
+
+Microsoft Updates RSS User Agent
+Updated: Thu, 28 Feb 2008 10:12:51 -0500
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+Updated: Tue, 22 Jan 2008 19:14:15 -0500
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+Updated: Wed, 16 Jan 2008 17:39:26 -0500
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+
+Syndication discussions hot up
+
+Personal web server integrates file sharing and messaging
+
+Syndication and Metadata
+
+UK bloggers get organised
+
+Yournamehere.com more important than anything
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+Updated: Tue, 03 Jun 2003 09:39:21 GMT
+
+<No Title>
+Updated: Fri, 30 May 2003 11:06:42 GMT
+
+The Engine That Does More
+Updated: Tue, 27 May 2003 08:37:32 GMT
+
+Astronauts' Dirty Laundry
+Updated: Tue, 20 May 2003 08:56:02 GMT
+
+=====================================
+
+TEST_9: -u -T flag
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+Updated: 2022-10-26T17:30:11Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/tightening_linux_boot_process_microsoft_poettering/
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+Updated: 2022-10-26T16:00:14Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/rolling_rhino_reboot/
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+Updated: 2022-10-26T12:30:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/shutterstock_getty_openai_dall_e/
+
+UK.gov finds billions in cash for big data contracts
+Updated: 2022-10-26T08:30:06Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/uk_big_data_deals/
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+Updated: 2022-10-26T07:32:06Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/generative_ai_pcs_upgrades/
+
+Flexible document model is secret noSQL sauce
+Updated: 2022-10-26T05:00:15Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/flexible_document_model_is_secret/
+
+Meta met a programming language it likes better than Java
+Updated: 2022-10-25T22:55:07Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/meta_java_kotlin/
+
+Apple finds way to squeeze social network apps until pips squeak
+Updated: 2022-10-25T22:14:14Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/apple_social_media_apps_nfts/
+
+Python team wraps version 3.11.0
+Updated: 2022-10-25T18:30:10Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/python_team_wraps_version_3110/
+
+SAP struggles to exit Russia after sale of support unit stalled
+Updated: 2022-10-25T16:30:09Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/sap_struggles_to_exit_russia/
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+Updated: 2022-10-25T15:30:06Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/linux_kernel_51917_ubuntu/
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+Updated: 2022-10-25T14:30:10Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/chrome_support_windows_7/
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+Updated: 2022-10-25T09:37:21Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/lashcat9_linux_ui/
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+Updated: 2022-10-25T06:29:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/microsoft_windows_22h2_printer/
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+Updated: 2022-10-25T01:43:54Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/realpage_rent_lawsuit/
+
+Microsoft's Chinese website reveals free PC Manager utility
+Updated: 2022-10-24T05:31:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/24/microsoft_china_pc_manager_utility/
+
+Human-replacing AI startups reach $1bn unicorn status
+Updated: 2022-10-23T21:14:07Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/23/two_generative_ai_startups_javis/
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+Updated: 2022-10-22T07:45:10Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/22/chrome_extension_howto/
+
+Microsoft said to be in talks to invest more in OpenAI
+Updated: 2022-10-21T19:13:27Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/microsoft_openai_investment/
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+Updated: 2022-10-21T16:30:08Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/openbsd_72_released/
+
+Windows Subsystem for Android declared ready for prime time
+Updated: 2022-10-21T04:59:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/windows_subsystem_for_android_released/
+
+India fines Google $162 million for abusing Android monopoly
+Updated: 2022-10-21T01:58:07Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/india_fines_google_android_monopoly/
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+Updated: 2022-10-20T12:51:10Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ubuntu_2210_kinetic_kudu/
+
+AI programming assistants mean rethinking computer science education
+Updated: 2022-10-20T07:31:04Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ai_programming_tools_mean_rethinking/
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+Updated: 2022-10-20T02:28:13Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/doj_solarwinds_dynatrace_interlocking_directors/
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+Updated: 2022-10-19T19:45:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/microsoft_updates_windows_10/
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+Updated: 2022-10-19T19:00:11Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/google_go_container_cncf/
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+Updated: 2022-10-19T11:28:05Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/github_copilot_copyright/
+
+FreeBSD comes to Amazon's lightweight hypervisor
+Updated: 2022-10-19T10:32:11Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/freebsd_comes_to_amazons_lightweight/
+
+Where do you fit in the professional services world? Find out with this webinar
+Updated: 2022-10-19T09:00:11Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/where_do_you_fit_in/
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+Updated: 2022-10-19T06:27:08Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/ai_model_reveals_new_policy/
+
+YouTube loves recommending conservative vids regardless of your beliefs
+Updated: 2022-10-18T23:16:55Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/youtube_algorithm_conservative_content/
+
+Self-driving tech startup values crash 81% in 2 years
+Updated: 2022-10-18T17:15:14Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/selfdriving_tech_values/
+
+FOSS digital audio workstation Ardour reaches version 7
+Updated: 2022-10-18T16:00:09Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/foss_digital_audio_workstation_ardour/
+
+Firefox 106 will let you type directly into browser PDFs
+Updated: 2022-10-18T15:30:13Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/firefox_106_arrives/
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+Updated: 2022-10-18T04:59:07Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/vdi_meets_daas/
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+Updated: 2022-10-18T02:45:40Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/doe_cerebras_waferscale/
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+Updated: 2022-10-17T21:00:09Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/broadcom_vmware_cloud_eu/
+
+Google reveals another experimental operating system: KataOS
+Updated: 2022-10-17T15:30:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/google_kata_os/
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+Updated: 2022-10-17T11:56:31Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/vodafone_opts_to_move_sap/
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+Updated: 2022-10-17T06:58:07Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/linux_6_1_rc1/
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+Updated: 2022-10-17T05:58:14Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/who_me/
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+Updated: 2022-10-17T04:59:08Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/azure_hybrid_benefit_extension/
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+Updated: 2022-10-16T10:39:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/16/in-brief-ai/
+
+Just $10 to create an AI chatbot of a dead loved one
+Updated: 2022-10-15T08:56:06Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/15/would_you_pay_10_to/
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+Updated: 2022-10-14T23:16:11Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dept_of_veterans_affairs_oracle_cerner/
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+Updated: 2022-10-14T18:00:13Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/kernel_61_will_contain_fixes/
+
+Laugh all you want. There will be a year of the Linux desktop
+Updated: 2022-10-14T11:03:09Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/year_of_linux_desktop/
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+Updated: 2022-10-14T09:25:12Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dsag_sap_user_conference/
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+Updated: 2022-10-14T04:03:05Z
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/trustable_internet_endorsement_layer/
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+Updated: 2012-03-12T17:22:08Z
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/03/12/idc_cases_big_data/
+
+Boffins build blood-swimming medical microbot
+Updated: 2012-02-25T01:53:29Z
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/25/autonomous_implantable_robot/
+
+Dell mothership hovers over backup startup, beams it aboard
+Updated: 2012-02-24T19:01:27Z
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/24/dell_appassure/
+
+Dell Latitude E6220 12.5in Core i7 notebook
+Updated: 2012-02-21T12:33:26Z
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/21/review_dell_latitude_e6220_core_i7_notebook/
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+Updated: Wed, 02 Apr 2014 11:12:53 -0400
+URL: https://www.rssboard.org/news/208/should-feed-readers-count-unread-items
+
+WordPress Uses RSS as Blog Export Format
+Updated: Tue, 11 Mar 2014 16:18:14 -0400
+URL: https://www.rssboard.org/news/207/wordpress-uses-rss-blog-export-format
+
+Yahoo Groups Dropped RSS Feed Support
+Updated: Thu, 06 Mar 2014 15:47:26 -0500
+URL: https://www.rssboard.org/news/206/yahoo-groups-dropped-rss-feed-support
+
+What Do You Use to Read RSS Feeds?
+Updated: Tue, 25 Feb 2014 15:15:05 -0500
+URL: https://www.rssboard.org/news/205/do-you-use-read-rss-feeds
+
+RSS Board Moves to New Server
+Updated: Thu, 28 Oct 2010 17:49:05 -0400
+URL: https://www.rssboard.org/news/204/rss-board-moves-new-server
+
+Media RSS Moves to the RSS Advisory Board
+Updated: Fri, 11 Dec 2009 21:29:08 -0500
+URL: https://www.rssboard.org/news/203/media-rss-moves-rss-advisory-board
+
+Proposal: Take Over Publication of Media-RSS
+Updated: Tue, 24 Nov 2009 13:58:43 -0500
+URL: https://www.rssboard.org/news/202/proposal-take-over-publication-media-rss
+
+6 Edits Made to RSS Specification
+Updated: Mon, 30 Mar 2009 08:00:00 -0400
+URL: https://www.rssboard.org/news/190/6-edits-made-rss-specification
+
+The RSS Namespace? 
+Updated: Fri, 13 Feb 2009 00:46:36 -0500
+URL: https://www.rssboard.org/news/187/rss-namespace
+
+Ryan Parman Joins RSS Advisory Board
+Updated: Fri, 12 Dec 2008 11:20:35 -0500
+URL: https://www.rssboard.org/news/185/ryan-parman-joins-rss-advisory-board
+
+RSS in 2008
+Updated: Thu, 23 Oct 2008 23:06:48 -0400
+URL: https://www.rssboard.org/news/184/rss-2008
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+Updated: Tue, 12 Aug 2008 12:42:49 -0400
+URL: https://www.rssboard.org/news/183/randy-charles-morin-becomes-rss-advisory
+
+Microsoft Updates RSS User Agent
+Updated: Thu, 28 Feb 2008 10:12:51 -0500
+URL: https://www.rssboard.org/news/182/microsoft-updates-rss-user-agent
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+Updated: Tue, 22 Jan 2008 19:14:15 -0500
+URL: https://www.rssboard.org/news/181/rss-090-091-moving-rss-advisory-board
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+Updated: Wed, 16 Jan 2008 17:39:26 -0500
+URL: https://www.rssboard.org/news/180/sterling-camden-simone-carletti-join-rss
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+URL: http://writetheweb.com/read.php?item=24
+
+Syndication discussions hot up
+URL: http://writetheweb.com/read.php?item=23
+
+Personal web server integrates file sharing and messaging
+URL: http://writetheweb.com/read.php?item=22
+
+Syndication and Metadata
+URL: http://writetheweb.com/read.php?item=21
+
+UK bloggers get organised
+URL: http://writetheweb.com/read.php?item=20
+
+Yournamehere.com more important than anything
+URL: http://writetheweb.com/read.php?item=19
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+Updated: Tue, 03 Jun 2003 09:39:21 GMT
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp
+
+<No Title>
+Updated: Fri, 30 May 2003 11:06:42 GMT
+
+The Engine That Does More
+Updated: Tue, 27 May 2003 08:37:32 GMT
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-VASIMR.asp
+
+Astronauts' Dirty Laundry
+Updated: Tue, 20 May 2003 08:56:02 GMT
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-laundry.asp
+
+=====================================
+
+TEST_10: -u -T -a flag
+*** The Register - Software ***
+Microsoft's Lennart Poettering proposes tightening up Linux boot process
+Updated: 2022-10-26T17:30:11Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/tightening_linux_boot_process_microsoft_poettering/
+
+Teen dream team reboots Rolling Rhino into Rhino Linux
+Updated: 2022-10-26T16:00:14Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/rolling_rhino_reboot/
+
+Shutterstock partners with OpenAI to sell AI-generated stock images using DALL-E
+Updated: 2022-10-26T12:30:12Z
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/shutterstock_getty_openai_dall_e/
+
+UK.gov finds billions in cash for big data contracts
+Updated: 2022-10-26T08:30:06Z
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/uk_big_data_deals/
+
+AI-driven creativity gives overpowered PCs something worthwhile to do, at last
+Updated: 2022-10-26T07:32:06Z
+Author: Mark Pesce
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/generative_ai_pcs_upgrades/
+
+Flexible document model is secret noSQL sauce
+Updated: 2022-10-26T05:00:15Z
+Author: Robin Birtstone
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/26/flexible_document_model_is_secret/
+
+Meta met a programming language it likes better than Java
+Updated: 2022-10-25T22:55:07Z
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/meta_java_kotlin/
+
+Apple finds way to squeeze social network apps until pips squeak
+Updated: 2022-10-25T22:14:14Z
+Author: Brandon Vigliarolo
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/apple_social_media_apps_nfts/
+
+Python team wraps version 3.11.0
+Updated: 2022-10-25T18:30:10Z
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/python_team_wraps_version_3110/
+
+SAP struggles to exit Russia after sale of support unit stalled
+Updated: 2022-10-25T16:30:09Z
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/sap_struggles_to_exit_russia/
+
+Update time for Ubuntu: Last version of Linux kernel 5.19.17 hits
+Updated: 2022-10-25T15:30:06Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/linux_kernel_51917_ubuntu/
+
+If you're still on Windows 7/8.1, it's time to say goodbye to Google Chrome
+Updated: 2022-10-25T14:30:10Z
+Author: Brandon Vigliarolo
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/chrome_support_windows_7/
+
+Lash#Cat9: A radical new Linux UI for keyboard warriors
+Updated: 2022-10-25T09:37:21Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/lashcat9_linux_ui/
+
+Microsoft fixes printing gremlin, ends that block on Windows 11 upgrades
+Updated: 2022-10-25T06:29:12Z
+Author: Jeff Burt
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/microsoft_windows_22h2_printer/
+
+Rent-calculating software biz accused of colluding with 'cartel' of landlords
+Updated: 2022-10-25T01:43:54Z
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/25/realpage_rent_lawsuit/
+
+Microsoft's Chinese website reveals free PC Manager utility
+Updated: 2022-10-24T05:31:12Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/24/microsoft_china_pc_manager_utility/
+
+Human-replacing AI startups reach $1bn unicorn status
+Updated: 2022-10-23T21:14:07Z
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/23/two_generative_ai_startups_javis/
+
+How I made a Chrome extension for converting Reg articles to UK spelling
+Updated: 2022-10-22T07:45:10Z
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/22/chrome_extension_howto/
+
+Microsoft said to be in talks to invest more in OpenAI
+Updated: 2022-10-21T19:13:27Z
+Author: Jeff Burt
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/microsoft_openai_investment/
+
+OpenBSD 7.2: The <i>other</i> other FOSS xNix released, runs on Apple M2 Macs
+Updated: 2022-10-21T16:30:08Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/openbsd_72_released/
+
+Windows Subsystem for Android declared ready for prime time
+Updated: 2022-10-21T04:59:12Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/windows_subsystem_for_android_released/
+
+India fines Google $162 million for abusing Android monopoly
+Updated: 2022-10-21T01:58:07Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/21/india_fines_google_android_monopoly/
+
+Ubuntu 22.10 is out, with an extra remix in the family: Unity
+Updated: 2022-10-20T12:51:10Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ubuntu_2210_kinetic_kudu/
+
+AI programming assistants mean rethinking computer science education
+Updated: 2022-10-20T07:31:04Z
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/ai_programming_tools_mean_rethinking/
+
+SolarWinds and Dynatrace directors resign over antitrust concerns
+Updated: 2022-10-20T02:28:13Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/20/doj_solarwinds_dynatrace_interlocking_directors/
+
+The only Windows 10 updates for the year are coming. Spoiler alert: It's just security
+Updated: 2022-10-19T19:45:12Z
+Author: Jeff Burt
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/microsoft_updates_windows_10/
+
+Google submits Go apps container project to Cloud Native Computing Foundation
+Updated: 2022-10-19T19:00:11Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/google_go_container_cncf/
+
+How GitHub Copilot could steer Microsoft into a copyright storm
+Updated: 2022-10-19T11:28:05Z
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/github_copilot_copyright/
+
+FreeBSD comes to Amazon's lightweight hypervisor
+Updated: 2022-10-19T10:32:11Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/freebsd_comes_to_amazons_lightweight/
+
+Where do you fit in the professional services world? Find out with this webinar
+Updated: 2022-10-19T09:00:11Z
+Author: David Gordon
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/where_do_you_fit_in/
+
+NASA AI shows slashing sulfur in shipping fuel cut air pollution at sea
+Updated: 2022-10-19T06:27:08Z
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/19/ai_model_reveals_new_policy/
+
+YouTube loves recommending conservative vids regardless of your beliefs
+Updated: 2022-10-18T23:16:55Z
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/youtube_algorithm_conservative_content/
+
+Self-driving tech startup values crash 81% in 2 years
+Updated: 2022-10-18T17:15:14Z
+Author: Brandon Vigliarolo
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/selfdriving_tech_values/
+
+FOSS digital audio workstation Ardour reaches version 7
+Updated: 2022-10-18T16:00:09Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/foss_digital_audio_workstation_ardour/
+
+Firefox 106 will let you type directly into browser PDFs
+Updated: 2022-10-18T15:30:13Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/firefox_106_arrives/
+
+AWS targets desktop virtualization rigs with lift and shift to cloudy DaaS
+Updated: 2022-10-18T04:59:07Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/vdi_meets_daas/
+
+Waferscale, meet atomic scale: Uncle Sam to test Cerebras chips in nuke weapon sims
+Updated: 2022-10-18T02:45:40Z
+Author: Tobias Mann
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/18/doe_cerebras_waferscale/
+
+Broadcom to spin VMware takeover as creating 'more competition' in cloud
+Updated: 2022-10-17T21:00:09Z
+Author: Tobias Mann
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/broadcom_vmware_cloud_eu/
+
+Google reveals another experimental operating system: KataOS
+Updated: 2022-10-17T15:30:12Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/google_kata_os/
+
+Vodafone to move SAP S/4HANA ERP system to Google Cloud
+Updated: 2022-10-17T11:56:31Z
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/vodafone_opts_to_move_sap/
+
+Linus Torvalds to kernel devs: Grow up and stop pulling all-nighters just before deadline
+Updated: 2022-10-17T06:58:07Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/linux_6_1_rc1/
+
+Loathsome eighties ladder-climber levelled by a custom DOS prompt
+Updated: 2022-10-17T05:58:14Z
+Author: Matthew JC Powell
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/who_me/
+
+Microsoft extends Azure Hybrid benefit to some on-prem software
+Updated: 2022-10-17T04:59:08Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/17/azure_hybrid_benefit_extension/
+
+Weird robot breaks down in middle of House of Lords hearing on AI art
+Updated: 2022-10-16T10:39:12Z
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/16/in-brief-ai/
+
+Just $10 to create an AI chatbot of a dead loved one
+Updated: 2022-10-15T08:56:06Z
+Author: Katyanna Quach
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/15/would_you_pay_10_to/
+
+US Veterans Affairs hits brakes on $10b Oracle Cerner health record system
+Updated: 2022-10-14T23:16:11Z
+Author: Thomas Claburn
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dept_of_veterans_affairs_oracle_cerner/
+
+Linux kernel 6.1 will contain fixes, features. Useful Rust modules? Not yet
+Updated: 2022-10-14T18:00:13Z
+Author: Liam Proven
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/kernel_61_will_contain_fixes/
+
+Laugh all you want. There will be a year of the Linux desktop
+Updated: 2022-10-14T11:03:09Z
+Author: Steven J. Vaughan-Nichols
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/year_of_linux_desktop/
+
+SAP's German-speaking heartlands still struggling with ERP vendor's cloud vision
+Updated: 2022-10-14T09:25:12Z
+Author: Lindsay Clark
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/dsag_sap_user_conference/
+
+Fujitsu and Japanese Uni propose 'endorsement layer' to make the internet trustable
+Updated: 2022-10-14T04:03:05Z
+Author: Simon Sharwood
+URL: https://go.theregister.com/feed/www.theregister.com/2022/10/14/trustable_internet_endorsement_layer/
+
+*** The Register - Hardware ***
+IDC: Big data biz worth $16.9 BILLION by 2015
+Updated: 2012-03-12T17:22:08Z
+Author: Timothy Prickett Morgan
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/03/12/idc_cases_big_data/
+
+Boffins build blood-swimming medical microbot
+Updated: 2012-02-25T01:53:29Z
+Author: Rik Myslewski
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/25/autonomous_implantable_robot/
+
+Dell mothership hovers over backup startup, beams it aboard
+Updated: 2012-02-24T19:01:27Z
+Author: Chris Mellor
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/24/dell_appassure/
+
+Dell Latitude E6220 12.5in Core i7 notebook
+Updated: 2012-02-21T12:33:26Z
+Author: Lynley Oram
+URL: http://go.theregister.com/feed/www.theregister.co.uk/2012/02/21/review_dell_latitude_e6220_core_i7_notebook/
+
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+Updated: Wed, 02 Apr 2014 11:12:53 -0400
+URL: https://www.rssboard.org/news/208/should-feed-readers-count-unread-items
+
+WordPress Uses RSS as Blog Export Format
+Updated: Tue, 11 Mar 2014 16:18:14 -0400
+URL: https://www.rssboard.org/news/207/wordpress-uses-rss-blog-export-format
+
+Yahoo Groups Dropped RSS Feed Support
+Updated: Thu, 06 Mar 2014 15:47:26 -0500
+URL: https://www.rssboard.org/news/206/yahoo-groups-dropped-rss-feed-support
+
+What Do You Use to Read RSS Feeds?
+Updated: Tue, 25 Feb 2014 15:15:05 -0500
+URL: https://www.rssboard.org/news/205/do-you-use-read-rss-feeds
+
+RSS Board Moves to New Server
+Updated: Thu, 28 Oct 2010 17:49:05 -0400
+URL: https://www.rssboard.org/news/204/rss-board-moves-new-server
+
+Media RSS Moves to the RSS Advisory Board
+Updated: Fri, 11 Dec 2009 21:29:08 -0500
+URL: https://www.rssboard.org/news/203/media-rss-moves-rss-advisory-board
+
+Proposal: Take Over Publication of Media-RSS
+Updated: Tue, 24 Nov 2009 13:58:43 -0500
+URL: https://www.rssboard.org/news/202/proposal-take-over-publication-media-rss
+
+6 Edits Made to RSS Specification
+Updated: Mon, 30 Mar 2009 08:00:00 -0400
+URL: https://www.rssboard.org/news/190/6-edits-made-rss-specification
+
+The RSS Namespace? 
+Updated: Fri, 13 Feb 2009 00:46:36 -0500
+URL: https://www.rssboard.org/news/187/rss-namespace
+
+Ryan Parman Joins RSS Advisory Board
+Updated: Fri, 12 Dec 2008 11:20:35 -0500
+URL: https://www.rssboard.org/news/185/ryan-parman-joins-rss-advisory-board
+
+RSS in 2008
+Updated: Thu, 23 Oct 2008 23:06:48 -0400
+URL: https://www.rssboard.org/news/184/rss-2008
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+Updated: Tue, 12 Aug 2008 12:42:49 -0400
+URL: https://www.rssboard.org/news/183/randy-charles-morin-becomes-rss-advisory
+
+Microsoft Updates RSS User Agent
+Updated: Thu, 28 Feb 2008 10:12:51 -0500
+URL: https://www.rssboard.org/news/182/microsoft-updates-rss-user-agent
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+Updated: Tue, 22 Jan 2008 19:14:15 -0500
+URL: https://www.rssboard.org/news/181/rss-090-091-moving-rss-advisory-board
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+Updated: Wed, 16 Jan 2008 17:39:26 -0500
+URL: https://www.rssboard.org/news/180/sterling-camden-simone-carletti-join-rss
+
+*** WriteTheWeb ***
+Giving the world a pluggable Gnutella
+URL: http://writetheweb.com/read.php?item=24
+
+Syndication discussions hot up
+URL: http://writetheweb.com/read.php?item=23
+
+Personal web server integrates file sharing and messaging
+URL: http://writetheweb.com/read.php?item=22
+
+Syndication and Metadata
+URL: http://writetheweb.com/read.php?item=21
+
+UK bloggers get organised
+URL: http://writetheweb.com/read.php?item=20
+
+Yournamehere.com more important than anything
+URL: http://writetheweb.com/read.php?item=19
+
+*** Dave Winer: Grateful Dead ***
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+<No Title>
+
+*** Liftoff News ***
+Star City
+Updated: Tue, 03 Jun 2003 09:39:21 GMT
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp
+
+<No Title>
+Updated: Fri, 30 May 2003 11:06:42 GMT
+
+The Engine That Does More
+Updated: Tue, 27 May 2003 08:37:32 GMT
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-VASIMR.asp
+
+Astronauts' Dirty Laundry
+Updated: Tue, 20 May 2003 08:56:02 GMT
+URL: http://liftoff.msfc.nasa.gov/news/2003/news-laundry.asp
+
+=====================================
+
+TEST_11: Wrong <certaddr> with -C
+*** RSS Advisory Board ***
+Should Feed Readers Count Unread Items?
+
+WordPress Uses RSS as Blog Export Format
+
+Yahoo Groups Dropped RSS Feed Support
+
+What Do You Use to Read RSS Feeds?
+
+RSS Board Moves to New Server
+
+Media RSS Moves to the RSS Advisory Board
+
+Proposal: Take Over Publication of Media-RSS
+
+6 Edits Made to RSS Specification
+
+The RSS Namespace? 
+
+Ryan Parman Joins RSS Advisory Board
+
+RSS in 2008
+
+Randy Charles Morin Becomes RSS Advisory Board Chair
+
+Microsoft Updates RSS User Agent
+
+RSS 0.90, 0.91 Moving to RSS Advisory Board
+
+Sterling Camden, Simone Carletti Join RSS Advisory Board
+
+=====================================
+

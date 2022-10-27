@@ -1,0 +1,73 @@
+TEST_1: Help statement
+
+=================================================== HELP ==================================================
+|                                                                                                          |
+|   USAGE: feedreader <URL | -f <feedfile>> [-c <certfile>] [-C <certaddr>] [-T] [-u] [-a] [-h | --help]   |
+|                 URL - resource URL                                                                       |
+|       -f <feedfile> - path to feedfile                                                                   |
+|       -c <certfile> - path to file with certificates                                                     |
+|       -C <certaddr> - path to directory with certficates                                                 |
+|                  -T - display last edit time or creation time (if available)                             |
+|                  -u - display associated URLs (if available)                                             |
+|                  -a - display information about author (if available)                                    |
+|                                                                                                          |
+|  * One of arguments <URL> or <-f <feedfile>> must be defined, but NOT both.                              |
+|  * If <-c <certfile>> or <-C <certaddr>> are not defined, 'SSL_CTX_set_default_verify_paths()' function  |
+|    will be used.                                                                                         |
+|  * While HTTP communication with server, redirecting is NOT implemented                                  |
+|  * In URL can be optionally specificated 'port number'                                                   |
+|                                                                                                          |
+============================================================================================================
+
+=====================================
+
+TEST_2: Help statement with other flags
+
+=================================================== HELP ==================================================
+|                                                                                                          |
+|   USAGE: feedreader <URL | -f <feedfile>> [-c <certfile>] [-C <certaddr>] [-T] [-u] [-a] [-h | --help]   |
+|                 URL - resource URL                                                                       |
+|       -f <feedfile> - path to feedfile                                                                   |
+|       -c <certfile> - path to file with certificates                                                     |
+|       -C <certaddr> - path to directory with certficates                                                 |
+|                  -T - display last edit time or creation time (if available)                             |
+|                  -u - display associated URLs (if available)                                             |
+|                  -a - display information about author (if available)                                    |
+|                                                                                                          |
+|  * One of arguments <URL> or <-f <feedfile>> must be defined, but NOT both.                              |
+|  * If <-c <certfile>> or <-C <certaddr>> are not defined, 'SSL_CTX_set_default_verify_paths()' function  |
+|    will be used.                                                                                         |
+|  * While HTTP communication with server, redirecting is NOT implemented                                  |
+|  * In URL can be optionally specificated 'port number'                                                   |
+|                                                                                                          |
+============================================================================================================
+
+=====================================
+
+TEST_3: No flags
+=====================================
+
+TEST_4: -T flag
+=====================================
+
+TEST_5: -u flag
+=====================================
+
+TEST_6: -a flag
+=====================================
+
+TEST_7: -a -u flag
+=====================================
+
+TEST_8: -a -T flag
+=====================================
+
+TEST_9: -u -T flag
+=====================================
+
+TEST_10: -u -T -a flag
+=====================================
+
+TEST_11: Wrong <certaddr> with -C
+=====================================
+

@@ -9,7 +9,6 @@
 
 export POSIXLY_CORRECT=yes
 
-
 print_help()
 { 
     echo -e "\n============================================= HELP =============================================\n"
@@ -32,23 +31,18 @@ RED='\033[1;31m'
 GREEN='\033[1;32m'
 BLUE='\033[1;34m'
 NC='\033[0m'
-SCRIPT='../feedreader'
+SCRIPT='./feedreader'
 
 line_args=$@
 feedfile=0
 url=0
 files=()
-directory="./files"
+directory="./test/files"
 nodir=0
 
 success=0
 fail=0
 count=0
-
-if [ ! -d "test_outputs" ]
-then
-    mkdir "test_outputs"
-fi
 
 # Reading args from cmd line
 args_read()
@@ -78,8 +72,8 @@ args_read()
 
     if [ $nodir -eq 1 ]
     then
-        rm -r "./test_outputs"
-        mkdir "test_outputs"
+        rm -r "./test/test_outputs"
+        mkdir "./test/test_outputs"
     fi
 }
 
@@ -119,6 +113,7 @@ read_start()
     done
 }
 
+# Wrong inputs
 wrong_inputs()
 {
     local file=$1
@@ -129,7 +124,7 @@ wrong_inputs()
     file_name="$(basename $file)"
     IFS='.' read file_name tmp <<< $file_name
 
-    local NEWFILE="./test_outputs/${file_name}_w-Input.out"
+    local NEWFILE="./test/test_outputs/${file_name}_w-Input.out"
 
     if [ -f $NEWFILE ]
     then
@@ -330,6 +325,7 @@ wrong_inputs()
     #############################################################
 }
 
+# Correct inputs
 correct_inputs()
 {
     local file=$1
@@ -341,8 +337,8 @@ correct_inputs()
     file_name_txt="$(basename $file)"
     IFS='.' read file_name tmp <<< $file_name_txt
 
-    local NEWFILE="./test_outputs/${file_name}_c-Input.out"
-    local ERRFILE="./test_outputs/${file_name}_c-Input.err"
+    local NEWFILE="./test/test_outputs/${file_name}_c-Input.out"
+    local ERRFILE="./test/test_outputs/${file_name}_c-Input.err"
 
     if [ -f $NEWFILE ]
     then
@@ -615,10 +611,18 @@ correct_inputs()
 
 # -------------------- MAIN ----------------------- #
 
+echo -e "\nStarting tests ..."
 args_read
+
+if [ ! -d "./test/test_outputs" ]
+then
+    mkdir "./test/test_outputs"
+fi
+
 file_reader $directory
 read_start
 
+echo -e "============== SUMMARY ==============="
 percentage=$(( success / count ))
 percentage=$(( percentage * 100 ))
 
@@ -627,4 +631,8 @@ echo -e "${GREEN}SUCCEEDED: ${NC}$success"
 echo
 echo -e "${BLUE}PERCENTAGE: ${NC}$percentage %"
 
+echo -e "\n* Check file 'test_outputs' for more"
+echo -e "  details about 'feedreader' outputs\n"
+
+echo -e "======================================"
 # ----------------- END OF MAIN ------------------- #

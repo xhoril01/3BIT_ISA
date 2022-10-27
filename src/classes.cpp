@@ -41,7 +41,7 @@
 
 
 // Use(ful|less) macros
-#define RDF_FEED 1
+// #define RDF_FEED 1
 #define RSS_FEED 2
 #define ATOM_FEED 3
 #define UNKNOWN_FEED -1
@@ -692,9 +692,11 @@ class Process
 
             switch(getFeedType(rootNode))
             {
+                /*
                 case RDF_FEED:
                         content2print = rdfFeed(rootNode, &feedTitle);
                         break;
+                */
 
                 case RSS_FEED:
                         content2print = rssFeed(rootNode, &feedTitle);
@@ -737,7 +739,7 @@ class Process
          */
         int getFeedType(xmlNodePtr rootNode)
         {
-            if(!xmlStrcmp(rootNode->name, (const xmlChar*)"rdf")) return RDF_FEED;
+            // if(!xmlStrcmp(rootNode->name, (const xmlChar*)"rdf")) return RDF_FEED;
 
             if(!xmlStrcmp(rootNode->name, (const xmlChar*)"rss")) return RSS_FEED;
 
@@ -753,6 +755,8 @@ class Process
          * @param title Pointer to main title of the feed
          * @return std::vector<XMLContent> List of parsed items
          */
+
+        /*
         std::vector<XMLContent> rdfFeed(xmlNodePtr rootNode, std::string *title)
         {
             XMLContent write;
@@ -794,7 +798,7 @@ class Process
                             xmlFree(content);
                         }
 
-                        if(!xmlStrcmp(childNode->name, (const xmlChar*)"creator"))
+                        if(!xmlStrcmp(childNode->name, (const xmlChar*)"dc:creator"))
                         {
                             content = xmlNodeGetContent(childNode);
                             author.name = (char*)content;
@@ -802,7 +806,7 @@ class Process
                             xmlFree(content);
                         }
 
-                        if(!xmlStrcmp(childNode->name, (const xmlChar*)"date"))
+                        if(!xmlStrcmp(childNode->name, (const xmlChar*)"dc:date"))
                         {
                             content = xmlNodeGetContent(childNode);
                             write.time = (char*)content;
@@ -821,6 +825,7 @@ class Process
             xmlCleanupParser();
             return writeList;
         }
+        */
 
         /**
          * @brief Parsing RSS 2.0 feed
@@ -921,6 +926,26 @@ class Process
                     xmlFree(content);
                 }
 
+                if(!xmlStrcmp(curNode->name, (const xmlChar*)"author"))
+                {
+                    for(xmlNodePtr authorNode = curNode->xmlChildrenNode; authorNode; authorNode = authorNode->next)
+                    {
+                        if(!xmlStrcmp(authorNode->name, (const xmlChar*)"name"))
+                        {
+                            content = xmlNodeGetContent(authorNode);
+                            author.name = (char*)content;
+                            xmlFree(content);
+                        }
+
+                        if(!xmlStrcmp(authorNode->name, (const xmlChar*)"email"))
+                        {
+                            content = xmlNodeGetContent(authorNode);
+                            author.email = (char*)content;
+                            xmlFree(content);
+                        }
+                    }
+                }
+
                 if(!xmlStrcmp(curNode->name, (const xmlChar*)"entry"))
                 {
                     for(xmlNodePtr childNode = curNode->xmlChildrenNode; childNode; childNode = childNode->next)
@@ -966,6 +991,11 @@ class Process
                             content = xmlGetProp(childNode,(const xmlChar*)"href");
                             write.aURL.push_back((char*)content);
                             xmlFree(content);
+                        }
+
+                        if(write.authors.empty() && !author.name.empty())
+                        {
+                            write.authors.push_back(author);
                         }
                     }
 

@@ -1,0 +1,89 @@
+TEST_1: Help statement
+=====================================
+
+TEST_2: Help statement with other flags
+=====================================
+
+TEST_3: No flags
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_4: -T flag
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_5: -u flag
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_6: -a flag
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_7: -a -u flag
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_8: -a -T flag
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_9: -u -T flag
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_10: -u -T -a flag
+Entity: line 411: parser error : EntityRef: expecting ';'
+lt;h4&gt;Intel CEO not surprised by US export controls on tech to China&lt;/h4&g
+                                                                               ^
+Parsing given XML file on url 'https://www.theregister.com/headlines.atom' failed
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
+
+TEST_11: Wrong <certaddr> with -C
+Bio error: error:00000000:lib(0):func(0):reason(0), certificates verification failed on url 'https://www.theregister.com/headlines.atom'
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+Bio error: error:00000000:lib(0):func(0):reason(0), certificates verification failed on url 'https://www.theregister.com/software/headlines.atom'
+Bio error: error:00000000:lib(0):func(0):reason(0), certificates verification failed on url 'https://www.theregister.com/hardware/headlines.atom'
+Bio error: error:00000000:lib(0):func(0):reason(0), certificates verification failed on url 'https://www.rssboard.org/files/sample-rss-091.xml'
+Bio error: error:00000000:lib(0):func(0):reason(0), certificates verification failed on url 'https://www.rssboard.org/files/sample-rss-092.xml'
+Bio error: error:00000000:lib(0):func(0):reason(0), certificates verification failed on url 'https://www.rssboard.org/files/sample-rss-2.xml'
+=====================================
+

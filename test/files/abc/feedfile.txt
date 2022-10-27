@@ -18,3 +18,6 @@ ftp://www.theregister.co.uk/data_centre/headlines.atom
 https://www.theregister.com/software/headlines.atom
 https://www.theregister.com/hardware/headlines.atom
 http://feeds.rssboard.org/rssboard
+https://www.rssboard.org/files/sample-rss-091.xml
+https://www.rssboard.org/files/sample-rss-092.xml
+https://www.rssboard.org/files/sample-rss-2.xml

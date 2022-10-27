@@ -9,6 +9,8 @@ LIBS= -lcrypto -lssl -lxml2
 
 # Build target
 TARGET = feedreader
+TEST = ./test/test.sh
+DIRS = ./test/files/
 
 all: clean feedreader
 
@@ -21,5 +23,9 @@ feedreader: classes.o
 classes.o:
 	$(CXX) $(CFLAGS) -c ./src/classes.cpp
 
+test: clean feedreader
+	@bash $(TEST) --nodir
+
 test_help:
+	@bash $(TEST) --help
 	
