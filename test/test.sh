@@ -37,7 +37,7 @@ line_args=$@
 feedfile=0
 url=0
 files=()
-directory="./test/files"
+directory="./"
 nodir=0
 
 success=0

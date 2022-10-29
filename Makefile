@@ -28,4 +28,7 @@ test: clean feedreader
 
 test_help:
 	@bash $(TEST) --help
+
+help: clean feedreader
+	./feedreader -h
 	

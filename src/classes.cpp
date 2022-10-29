@@ -1039,11 +1039,11 @@ class Process
                 {
                     for(Author author : cont.authors)
                     {
-                        cout << "Author: " << author.name.c_str() << endl;
                         if(!author.email.empty())
                         {
-                            cout << "Author email: " << author.email.c_str() << endl;
+                            cout << "Author: " << author.name.c_str() << " (" << author.email.c_str() << ")" << endl;
                         }
+                        else cout << "Author: " << author.name.c_str() << endl;
                     }
                 }
 

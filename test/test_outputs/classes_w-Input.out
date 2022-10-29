@@ -1,0 +1,34 @@
+TEST_1: no parameter
+One of 'url' or '-f <feedfile>' argument is required.
+=====================================
+TEST_2: Bad parameters
+None or unknown parameter was given
+=====================================
+TEST_3: Both -f an URL
+One of 'url' or '-f <feedfile>' argument is required, but NOT both.
+=====================================
+TEST_4: -f and 2 bad parameters
+None or unknown parameter was given
+=====================================
+TEST_5: URL and bad parameter
+None or unknown parameter was given
+=====================================
+TEST_6: Unknown flag
+Unknown flag: -b.
+=====================================
+TEST_7: Unknown flag among known ones
+Unknown flag: -d.
+=====================================
+TEST_8: Required argument with -c
+-f, -c and -C flags require argument.
+=====================================
+TEST_9:Required argument with -f
+-f, -c and -C flags require argument.
+=====================================
+TEST_10: Required argument with -C
+-f, -c and -C flags require argument.
+=====================================
+TEST_11: Unsupported url scheme
+Incorrect URL : 'ftp://www.theregister.co.uk/data_centre/headlines.atom'
+Only 'http' and 'https' schemes are allowed
+=====================================
