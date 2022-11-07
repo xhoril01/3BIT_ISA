@@ -25,6 +25,8 @@
 
 #include <libxml/parser.h>
 
+using namespace std;
+
 // Errors handling
 #define ERR_STAT(_m) { \
             fprintf(stderr,(_m "\n")); \
@@ -544,7 +546,7 @@ class Process
             }
 
             std::stringstream request;
-            request << "GET " << pURL->path << " HTTP/1.1\r\n";
+            request << "GET " << pURL->path << " HTTP/1.0\r\n";
             request << "Host: " << pURL->authority.str() << "\r\n";
             request << "Accept: */*\r\n";
             request << "Connection: Close\r\n";
@@ -1032,7 +1034,7 @@ class Process
 
                 if(args->isTime() && !cont.time.empty())
                 {
-                    cout << "Updated: " << cont.time.c_str() << endl;
+                    cout << "Aktualizace: " << cont.time.c_str() << endl;
                 }
 
                 if(args->isAuthor() && !cont.authors.empty())
@@ -1041,9 +1043,9 @@ class Process
                     {
                         if(!author.email.empty())
                         {
-                            cout << "Author: " << author.name.c_str() << " (" << author.email.c_str() << ")" << endl;
+                            cout << "Autor: " << author.name.c_str() << " (" << author.email.c_str() << ")" << endl;
                         }
-                        else cout << "Author: " << author.name.c_str() << endl;
+                        else cout << "Autor: " << author.name.c_str() << endl;
                     }
                 }
 

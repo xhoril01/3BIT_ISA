@@ -9,3 +9,4 @@ http://feeds.rssboard.org/rssboard
 https://www.rssboard.org/files/sample-rss-091.xml
 https://www.rssboard.org/files/sample-rss-092.xml
 https://www.rssboard.org/files/sample-rss-2.xml
+https://www.fit.vut.cz/fit/news-rss/

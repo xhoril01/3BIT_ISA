@@ -96,7 +96,7 @@ file_reader()
             file_reader $d
         done
     else
-        for file in "$d"/*
+        for file in "$dir"/*
         do
             files+=($file)
         done
@@ -624,8 +624,10 @@ file_reader $directory
 read_start
 
 echo -e "============== SUMMARY ==============="
-percentage=$(( success / count ))
-percentage=$(( percentage * 100 ))
+#percentage=bc <<<  'scale=2; success / count'
+#percentage=$(( percentage * 100 ))
+
+percentage=$(awk "BEGIN {printf \"%.2f\", (${success}/${count})*100}")
 
 echo -e "${RED}FAILED: ${NC}$fail"
 echo -e "${GREEN}SUCCEEDED: ${NC}$success"
