@@ -21,7 +21,7 @@ print_help()
     echo
     echo -e "* If you want to use just one URL, write it inside text file and start script with '-d' parameter \n"
     echo -e "and specify path of its directory \n"
-    echo -e "* If -d is not specified, /files will be used as main directory"
+    echo -e "* If -d is not specified, ./test/files will be used as main directory"
     echo
     echo -e "==================================================================================================\n"
 
@@ -37,7 +37,7 @@ line_args=$@
 feedfile=0
 url=0
 files=()
-directory="./"
+directory="./test/files"
 nodir=0
 
 success=0
@@ -612,12 +612,13 @@ correct_inputs()
 # -------------------- MAIN ----------------------- #
 
 echo -e "\nStarting tests ..."
-args_read
 
 if [ ! -d "./test/test_outputs" ]
 then
     mkdir "./test/test_outputs"
 fi
+
+args_read
 
 file_reader $directory
 read_start
