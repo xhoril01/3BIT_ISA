@@ -594,6 +594,8 @@ correct_inputs()
     if [ $ret_code -ne 0 ]
     then 
         echo -e "${RED}TEST_11_C ERROR:${NC}Expected return code is 0 but is ${ret_code}" 1>&2
+        echo -e "${BLUE}Check the .err file for error statement.${NC}"  1>&2 
+        echo -e "" 1>&2
         let "fail+=1"
     else
         let "success+=1"
