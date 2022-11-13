@@ -430,6 +430,7 @@ class Process
                 }
 
                 file.close();
+
             }
             catch(std::exception &e)
             {
@@ -473,7 +474,8 @@ class Process
             SSL_load_error_strings();
             ERR_load_BIO_strings();
             OpenSSL_add_all_algorithms();
-            SSL_library_init();
+            OpenSSL_add_ssl_algorithms();
+            //SSL_library_init();
 
             // Unsecure connection
             if(schemeCheck(pURL->scheme, "http"))
@@ -628,7 +630,7 @@ class Process
                 IM_FREEEEE;
                 return -1;
             }
-
+                  
             IM_FREEEEE;
             return 0;
         }
@@ -1057,8 +1059,12 @@ class Process
                     }
                 }
 
-                cout << endl;
+                if(args->isAssocURL() || args->isAuthor() || args->isTime())
+                {
+                    cout << endl;
+                }
             }
+            cout << endl;
 
             return;
         }
