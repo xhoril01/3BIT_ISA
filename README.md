@@ -6,9 +6,9 @@ Feedreader will write out information from downloaded feeds in Atom or RSS 2.0 f
 ### Compilation
 Command
 ```
-make
+make or make all
 ```
-will create executable script
+will create executable script.
 ### Executing program
 ```
 ./feedreader <URL | -f <feedfile>> [-c <certfile>] [-C <certaddr>] [-T][-u][-a][-h | --help]
@@ -33,7 +33,7 @@ Command
 ```
 make clean
 ```
-will remove all executable and .o files
+will remove all executable and .o files.
 
 ### Testing
 Command
@@ -48,6 +48,7 @@ make test_help
 
 ## Author
 Denis Horil (xhoril01)
+
 ## Sources
 * [Atom feed](https://validator.w3.org/feed/docs/atom.html#requiredFeedElements)
 * [RSS 2.0 specification](https://www.rssboard.org/rss-specification#google_vignette)
