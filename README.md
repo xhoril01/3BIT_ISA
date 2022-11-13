@@ -33,7 +33,7 @@ Command
 ```
 make clean
 ```
-will remove all executable and .o files.
+will remove all executable and `.o` files.
 
 ### Testing
 Command
@@ -48,6 +48,23 @@ make test_help
 
 ## Author
 Denis Horil (xhoril01)
+
+## Date
+13.11.2022
+
+## Source Files
+* feedreader.cpp
+* classes.cpp
+
+All source files are in `/src` directory. 
+
+## Test Files
+* test.sh
+
+Test script is in `/test` directory. In `/test/files` should be testing `feedfile`.
+
+## Documentation
+All files regarding doucmentation (.pdf, .tex, .bib) is in `/doc` file.
 
 ## Sources
 * [Atom feed](https://validator.w3.org/feed/docs/atom.html#requiredFeedElements)
