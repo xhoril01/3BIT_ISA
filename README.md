@@ -61,7 +61,7 @@ All source files are in `/src` directory.
 ## Test Files
 * test.sh
 
-Test script is in `/test` directory. In `/test/files` should be testing `feedfile`.
+Test script is in `/test` directory. In `/test/files` should be testing `feedfile.txt`.
 
 ## Documentation
 All files regarding doucmentation (.pdf, .tex, .bib) is in `/doc` file.
